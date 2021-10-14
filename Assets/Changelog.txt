@@ -1,6 +1,0 @@
----------------
-GitHub Commit 3
----------------
-> Renamed "GameTitle.anim" to "TitleIdle.anim"
-> Created TitleOpen and TitleClose animation
-> Edited CreditsClose animation
