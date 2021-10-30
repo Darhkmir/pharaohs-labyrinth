@@ -11,3 +11,6 @@ Background Music
 Graphics
 -	FFF Forward Font	by	Fonts For Flash
 --------------------------------------------------------------------
+Scripts
+-	Mini FPS Controller	by	Vitefait
+--------------------------------------------------------------------
