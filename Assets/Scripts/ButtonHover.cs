@@ -13,10 +13,10 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	}
 	
 	public void OnPointerExit(PointerEventData eventData) {
-		theText.color = new Color32(94, 32, 116, 255);
+		theText.color = new Color32(176, 176, 176, 255);
 	}
 	
 	public void ResetHover() {
-		theText.color = new Color32(94, 32, 116, 255);
+		theText.color = new Color32(176, 176, 176, 255);
 	}
 }
