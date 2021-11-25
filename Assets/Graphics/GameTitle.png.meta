@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 367371f1f0199f441aa3adaccd40e4d6
+guid: 13065a0e751ccc84fb1e4322afdf2728
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -17,9 +17,6 @@ TextureImporter:
   - first:
       213: -5893557192365271090
     second: GameTitle_4
-  - first:
-      213: 5804678577798249914
-    second: GameTitle_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -83,7 +80,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -95,7 +92,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -113,9 +110,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1280
-        height: 720
+        y: 59
+        width: 172
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,10 +130,10 @@ TextureImporter:
       name: GameTitle_1
       rect:
         serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 1280
-        height: 720
+        x: 172
+        y: 59
+        width: 172
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,10 +151,10 @@ TextureImporter:
       name: GameTitle_2
       rect:
         serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 1280
-        height: 720
+        x: 344
+        y: 59
+        width: 172
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +172,10 @@ TextureImporter:
       name: GameTitle_3
       rect:
         serializedVersion: 2
-        x: 3840
+        x: 0
         y: 0
-        width: 1280
-        height: 720
+        width: 172
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +193,10 @@ TextureImporter:
       name: GameTitle_4
       rect:
         serializedVersion: 2
-        x: 5120
+        x: 172
         y: 0
-        width: 1280
-        height: 720
+        width: 172
+        height: 59
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,27 +206,6 @@ TextureImporter:
       bones: []
       spriteID: ec79e9d75f0e53ea0800000000000000
       internalID: -5893557192365271090
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GameTitle_5
-      rect:
-        serializedVersion: 2
-        x: 6400
-        y: 0
-        width: 1280
-        height: 720
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: abdfbf8796c5e8050800000000000000
-      internalID: 5804678577798249914
       vertices: []
       indices: 
       edges: []

@@ -9,11 +9,5 @@ Background Music
 -	Title Screen (Lenses of Shadows)	by	SackJo22 (ft. Apophysia)
 --------------------------------------------------------------------
 Graphics
--	Title Font (Horbse)					by	angins
--	Game Font (Hydrophilia)				by	Floodfonts
--	Textures							by	LowlyPoly
--	UI Graphics							by	ogoo
---------------------------------------------------------------------
-Scripts
--	Mini FPS Controller					by	Vitefait
+-	Font (Hydrophilia)					by	Floodfonts
 --------------------------------------------------------------------
