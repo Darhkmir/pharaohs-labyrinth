@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Stop Movement
   - Water
   - UI
   - 
@@ -48,5 +48,5 @@ TagManager:
     uniqueID: 1582301369
     locked: 0
   - name: Map Above
-    uniqueID: 595072115
+    uniqueID: 744184569
     locked: 0
