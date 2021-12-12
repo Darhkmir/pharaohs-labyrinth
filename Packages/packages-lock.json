@@ -55,7 +55,7 @@
       "dependencies": {}
     },
     "com.unity.2d.spriteshape": {
-      "version": "5.1.5",
+      "version": "5.1.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -72,20 +72,8 @@
       "source": "builtin",
       "dependencies": {}
     },
-    "com.unity.2d.tilemap.extras": {
-      "version": "1.8.1-preview",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.tilemap": "1.0.0",
-        "com.unity.2d.tilemap": "1.0.0",
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.collab-proxy": {
-      "version": "1.15.1",
+      "version": "1.15.4",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -111,7 +99,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.11",
+      "version": "2.0.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
