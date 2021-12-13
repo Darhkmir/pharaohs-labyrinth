@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RoomTemplates : MonoBehaviour {
 
@@ -21,7 +22,8 @@ public class RoomTemplates : MonoBehaviour {
         if (waitTime <= 0 && spawnedDrop == false) {
             for (int i = 0; i < rooms.Count; i++) {
                 if (i == rooms.Count - 1) {
-                    Instantiate(drop, rooms[i].transform.position, Quaternion.identity);
+                    Vector2 spawnPos = new Vector2(rooms[i].transform.position.x, rooms[i].transform.position.y - 1);
+                    Instantiate(drop, spawnPos, Quaternion.identity);
                     spawnedDrop = true;
                 }
             }

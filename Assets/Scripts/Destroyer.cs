@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Destroyer : MonoBehaviour {
 
+    [SerializeField] private LayerMask ignoreDestruction;
+
     void OnTriggerEnter2D(Collider2D other) {
-        Destroy(other.gameObject);
+        if (other.gameObject.layer != ignoreDestruction) {
+            Destroy(other.gameObject);
+        }
     }
     
 }
