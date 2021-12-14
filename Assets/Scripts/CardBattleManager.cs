@@ -6,19 +6,15 @@ using UnityEngine.UI;
 public class CardBattleManager : MonoBehaviour {
 
     public enum phases {Begin, PlayerPlay, EnemyPlay, Battle, Victory, GameOver};
-    public enum cardsList {Slave, Merchant, Pharaoh};
     public phases gamePhase;
 
     [SerializeField] private GameObject playerHand;
     [SerializeField] private GameObject enemyHand;
-    [SerializeField] private Image playerPlayZone;
-    [SerializeField] private Image enemyPlayZone;
-    [SerializeField] private Image cardPreview;
+    [SerializeField] private Image playerPlayzone;
+    [SerializeField] private Image enemyPlayzone;
 
     private List<Sprite> playerCards = new List<Sprite>();
     private List<Sprite> enemyCards = new List<Sprite>();
-    private Image playerPlayzone;
-    private Image enemyPlayzone;
 
     [SerializeField] private Sprite[] cardSprites;
     // 0 = Slave, 1 = Merchant, 2 = Pharaoh, 3 = Card Back
@@ -30,7 +26,7 @@ public class CardBattleManager : MonoBehaviour {
             playerCards.Add(cardSprites[1]);
             enemyCards.Add(cardSprites[1]);
         }
-        int ranPharaoh = Random.Range(0, 1);
+        int ranPharaoh = Random.Range(0, 2);
         if (ranPharaoh == 0) {
             playerCards.Add(cardSprites[2]);
             enemyCards.Add(cardSprites[0]);
@@ -52,11 +48,10 @@ public class CardBattleManager : MonoBehaviour {
         }
 
         if (gamePhase == phases.EnemyPlay) {
-            enemyPlayzone.gameObject.SetActive(true);
-            cardPreview.gameObject.SetActive(false);
-            int ranPlay = Random.Range(0, enemyCards.Count);
-            enemyPlayzone.sprite = enemyCards[ranPlay];
-            enemyCards.Remove(enemyCards[ranPlay]);
+            int ranCard = Random.Range(0, enemyCards.Count);
+            enemyPlayzone.sprite = enemyCards[ranCard];
+            enemyCards.Remove(enemyCards[ranCard]);
+            EnemyPlaysCard();
             gamePhase = phases.Battle;
         }
     }
