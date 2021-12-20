@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 	
-	public float moveSpeed = 5f;
+	[SerializeField] private float moveSpeed;
 	public Transform movePoint;
 	Vector2 movement;
-	public Animator animator;
+	[SerializeField] private Animator animator;
 	public LayerMask whatStopsMovement;
 
 	void Start() {
@@ -25,7 +25,8 @@ public class PlayerMovement : MonoBehaviour {
 				if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movement.x, 0f, 0f), 0.2f, whatStopsMovement)) {
 					movePoint.position += new Vector3(movement.x, 0f, 0f);
 				}
-			} else if (Mathf.Abs(movement.y) == 1f) {
+			}
+			if (Mathf.Abs(movement.y) == 1f) {
 				if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movement.y, 0f), 0.2f, whatStopsMovement)) {
 					movePoint.position += new Vector3(0f, movement.y, 0f);
 				}
