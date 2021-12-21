@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class CardBattleManager : MonoBehaviour {
@@ -266,10 +267,12 @@ public class CardBattleManager : MonoBehaviour {
 
     void Victory () {
         Debug.Log("You win!");
+        SceneManager.UnloadSceneAsync(3);
     }
 
     void GameOver() {
         Debug.Log("You lose!");
+        SceneManager.UnloadSceneAsync(3);
     }
 
     void ShuffleHand() {

@@ -6,9 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Splash01.unity
+    guid: 222e6a0f13422d34abf06714971d889e
+  - enabled: 1
+    path: Assets/Scenes/Splash02.unity
+    guid: ece5208b151543c4ba5faba8a2442925
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/CardBattle.unity
     guid: ddbebbdcd9cbe5d4dbb11cfd23316691
+  - enabled: 1
+    path: Assets/Scenes/Floors/Floor01.unity
+    guid: 68eefad33b7bc3f4da57695178ddaf50
+  - enabled: 1
+    path: Assets/Scenes/Floors/Floor02.unity
+    guid: bbc966f8eae07154e870e4bd0440ff93
+  - enabled: 1
+    path: Assets/Scenes/Floors/Floor03.unity
+    guid: 5880ce31b847da649af6f646194db919
+  - enabled: 1
+    path: Assets/Scenes/EndGame.unity
+    guid: 4ea5555898f6a00489c711cecf6e9d1a
   m_configObjects: {}

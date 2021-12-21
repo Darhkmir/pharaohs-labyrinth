@@ -2,21 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 	
-	public GameObject canvas;
-	public GameObject main;
-	public GameObject credits;
-	public GameObject notAvailable;
-	public GameObject title;
-	public GameObject options;
-	
-	Animator mainAnimator;
-	Animator creditsAnimator;
-	Animator titleAnimator;
-	Animator unavailableAnimator;
-	Animator optionsAnimator;
+	[SerializeField] private GameObject canvas, main, credits, notAvailable, title, options;
+	Animator mainAnimator, creditsAnimator, titleAnimator, unavailableAnimator, optionsAnimator;
 	
 	public void Start() {
 		mainAnimator = main.GetComponent<Animator>();
@@ -28,7 +19,7 @@ public class MainMenu : MonoBehaviour {
 	
 	public void NewButton() {
 		StartCoroutine(DisableMain(0.5f));
-		notAvailable.SetActive(true);
+		SceneManager.LoadScene(4);
 	}
 	
 	public void LoadButton() {

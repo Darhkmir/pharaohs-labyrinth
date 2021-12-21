@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 	
 	[SerializeField] private float moveSpeed;
-	public Transform movePoint;
-	Vector2 movement;
+	[SerializeField] private Transform movePoint;
+	private Vector2 movement;
 	[SerializeField] private Animator animator;
-	public LayerMask whatStopsMovement;
+	[SerializeField] private LayerMask whatStopsMovement;
 
 	void Start() {
 		movePoint.parent = null;
@@ -24,11 +25,13 @@ public class PlayerMovement : MonoBehaviour {
 			if (Mathf.Abs(movement.x) == 1f) {
 				if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(movement.x, 0f, 0f), 0.2f, whatStopsMovement)) {
 					movePoint.position += new Vector3(movement.x, 0f, 0f);
+					RandomEncounter();
 				}
 			}
 			if (Mathf.Abs(movement.y) == 1f) {
 				if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, movement.y, 0f), 0.2f, whatStopsMovement)) {
 					movePoint.position += new Vector3(0f, movement.y, 0f);
+					RandomEncounter();
 				}
 			}
 		}
@@ -44,4 +47,11 @@ public class PlayerMovement : MonoBehaviour {
 	  animator.SetFloat("Speed", movement.sqrMagnitude);
   }
     
+	void RandomEncounter() {
+		int willEcounter = Random.Range(1, 10);
+		if (willEcounter == 2 || willEcounter == 5 || willEcounter == 9) {
+			SceneManager.LoadScene(3, LoadSceneMode.Additive);
+		}
+	}
+
 }
