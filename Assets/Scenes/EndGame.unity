@@ -157,8 +157,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: -100, y: -150}
+  m_AnchoredPosition: {x: 0, y: -20}
+  m_SizeDelta: {x: -100, y: -118.9753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &21795372
 MonoBehaviour:
@@ -180,9 +180,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hello! I hope you enjoyed. It wasn't much of a game, but I tried I guess.
-    But don't fret! There is more! Just head on over to the game files and search
-    for a folder called "TendaPlugin"
+  m_text: Hello! I hope you enjoyed, merry late christmas, and happy new years! It
+    wasn't much of a game, but I tried I guess. But don't fret! There is more! Just
+    head on over to the game files and double click on the file called TendaPlugin!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

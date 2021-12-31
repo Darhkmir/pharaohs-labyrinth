@@ -14,9 +14,7 @@ public class CardFeatures : MonoBehaviour {
     }
 
     public void OnPointerClick() {
-        Debug.Log("Mouse clicked");
         if (cbm.playerTurn) {
-            Debug.Log("Player chose a card");
             cbm.cardPlayerPlayed = cardID;
             gameObject.transform.SetParent(cbm.playzone.transform);
             cbm.playerCards.Remove(gameObject);

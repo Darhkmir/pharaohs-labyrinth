@@ -7,6 +7,7 @@ TagManager:
   - SpawnPoint
   - Rooms
   - CardManager
+  - Drop
   layers:
   - Default
   - TransparentFX
@@ -44,12 +45,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Map Below
+  - name: Map
     uniqueID: 3542285707
     locked: 0
-  - name: Player
+  - name: Objects
     uniqueID: 1582301369
     locked: 0
-  - name: Map Above
+  - name: Overlay
     uniqueID: 744184569
     locked: 0

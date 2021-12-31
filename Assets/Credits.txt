@@ -1,5 +1,5 @@
 --------------------------------------------------------------------
-PHARAOH'S LABYRINTH by PIXLCRIM
+PHARAOH'S LABYRINTH by DARHKMIR
 --------------------------------------------------------------------
 
 --------------------------------------------------------------------
@@ -7,7 +7,14 @@ Credits
 --------------------------------------------------------------------
 Background Music
 -	Title Screen (Lenses of Shadows)	by	SackJo22 (ft. Apophysia)
+- Dungeon                           by  terrytom
 --------------------------------------------------------------------
 Graphics
--	Font (Hydrophilia)					by	Floodfonts
+-	Font (Hydrophilia)					      by	Floodfonts
+- Symbols on Walls                  by  ELV Games
+--------------------------------------------------------------------
+Sound Effects
+- Deep Sea Monster                  by  cylon8472
+- Victory                           by  rezyma
+- Jingle Lose                       by  LittleRobotSoundFactory
 --------------------------------------------------------------------

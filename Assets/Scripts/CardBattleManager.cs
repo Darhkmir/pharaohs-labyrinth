@@ -13,7 +13,7 @@ public class CardBattleManager : MonoBehaviour {
     private players pharaohHolder;
 
     public GameObject playerHand, playzone;
-    [SerializeField] private GameObject enemyHand;
+    [SerializeField] private GameObject enemyHand, winWindow, loseWindow;
 
     [HideInInspector] public List<GameObject> playerCards = new List<GameObject>();
     private List<GameObject> enemyCards = new List<GameObject>();
@@ -27,6 +27,9 @@ public class CardBattleManager : MonoBehaviour {
     // Match Result: 0 = Draw, 1 = Lose, 2 = Victory
     [HideInInspector] public bool playerTurn;
     private bool nextMatch;
+
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip winClip, loseClip;
 
     [SerializeField] private TextMeshProUGUI enemyPointsText, playerPointsText;
 
@@ -266,13 +269,11 @@ public class CardBattleManager : MonoBehaviour {
     }
 
     void Victory () {
-        Debug.Log("You win!");
-        SceneManager.UnloadSceneAsync(3);
+        StartCoroutine(OutcomeScreen(0));
     }
 
     void GameOver() {
-        Debug.Log("You lose!");
-        SceneManager.UnloadSceneAsync(3);
+        StartCoroutine(OutcomeScreen(1));
     }
 
     void ShuffleHand() {
@@ -298,6 +299,24 @@ public class CardBattleManager : MonoBehaviour {
     IEnumerator WaitOnDraw() {
         yield return new WaitForSeconds(0.6f);
         DetermineOutcome();
+    }
+
+    IEnumerator OutcomeScreen(int winner) {
+        switch (winner) {
+            case 0:
+                winWindow.SetActive(true);
+                source.PlayOneShot(winClip);
+                yield return new WaitForSeconds(4.3f);
+                SceneManager.UnloadSceneAsync(3);
+                break;
+
+            case 1:
+                loseWindow.SetActive(true);
+                source.PlayOneShot(loseClip);
+                yield return new WaitForSeconds(4.3f);
+                SceneManager.UnloadSceneAsync(3);
+                break;
+        }
     }
 
 }
